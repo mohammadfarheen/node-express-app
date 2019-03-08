@@ -7,7 +7,7 @@ const port = 3002
 app.get('/', function (req, res) {
 app.post('/', function (req, res) {
   console.log('POST request')
-  res.send('Welcome back!')
+  res.send('Welcome to my page!')
 })
 
 app.use(function (req, res, next) {
@@ -17,12 +17,12 @@ app.use(function (req, res, next) {
 
 app.get('/hello', (req, res) => {
   console.log('GET request')
-  res.send('Hello World!')
+  res.send('Hello buddies!')
 })
 
 app.get('/big',  (req, res) =>{
   console.log('GET request')
-  res.send('<h1>Hello World!</h1>')
+  res.send('<h1>Hello buddies!</h1>')
 })
 
 app.get('/greeting/:id',  (req, res) =>{
